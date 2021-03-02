@@ -26,3 +26,33 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3) is None
         True
     """
+
+    
+    if operation == 'add':
+        result = a + b
+        if make_int == True:
+            result = int(result)
+        return f"{message} {result}"
+
+    if operation == 'subtract':
+        result = a - b
+        if make_int == True:
+            result = int(result)
+        return f"{message} {result}"
+
+    if operation == 'multiply':
+        result = a * b
+        if make_int == True:
+            result = int(result)
+        return f"{message} {result}"
+
+    if operation == 'divide':
+        result = a / b
+        if make_int == True:
+            result = int(result)
+        return f"{message} {result}"
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()

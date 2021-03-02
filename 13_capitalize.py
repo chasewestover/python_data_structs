@@ -8,3 +8,10 @@ def capitalize(phrase):
         'Only first word'
     """
 
+    return phrase.capitalize()
+
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()

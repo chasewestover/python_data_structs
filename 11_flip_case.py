@@ -23,3 +23,7 @@ def flip_case(phrase, to_swap):
     return stringToReturn
 
     #return "".join([ l.swapcase() for l in list(phrase) if l.lower() == to_swap.lower() ])
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
